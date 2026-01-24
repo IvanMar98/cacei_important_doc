@@ -89,6 +89,11 @@
 	add constraint uq_research_line_name unique (name);
 		
 	show create table research_lines;
+    
+    -- Agregar columna description 
+    alter table research_lines
+    add column description varchar(100) not null;
+    
 
 -- Academic Bodies
 	create table if not exists academic_bodies (
@@ -107,6 +112,10 @@
 	alter table academic_bodies
 	modify name varchar(100) not null,
 	add constraint uq_academic_body_name unique (name);
+    
+    -- Agregar columna description
+    alter table academic_bodies
+    add column description varchar(100) not null;
 
 	show create table academic_bodies;
 
