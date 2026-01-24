@@ -135,5 +135,10 @@ select * from institutions_origin;
 select * from research_lines;
 
 -- Insertar cuerpos academicos que pueden tener los articulos, proyectos y tesis (academic_bodies)
+insert into academic_bodies(name, description)values
+('CASI','Cuerpo Académico de Sistemas de Información'),
+('CAIS', 'Cuerpo Académico de Ingeniería de Software'),
+('CATE', 'Cuerpo Académico de Tecnologías Emergentes');
 
+select * from academic_bodies;
 
