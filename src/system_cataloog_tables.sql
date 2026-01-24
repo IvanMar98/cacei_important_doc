@@ -54,6 +54,14 @@
 	alter table institutions_origin
 	modify name varchar(100) not null,
 	add constraint uq_institution_origin_name unique (name);
+    
+    -- Agregar columna description 
+    alter table institutions_origin
+    add column description varchar(100);
+	
+    alter table institutions_origin
+    modify description varchar(100) not null;
+    
 
 	show create table institutions_origin;
 
