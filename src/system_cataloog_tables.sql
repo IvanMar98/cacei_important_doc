@@ -21,6 +21,11 @@
 	-- Agregar una nueva contraint unique
 	alter table funding_sources
 	add constraint uq_funding_source_name unique (name);
+    
+    -- Agregar columna description 
+    
+    alter table funding_sources
+    add column description varchar(255) not null;
 
 	show create table funding_sources;
 
