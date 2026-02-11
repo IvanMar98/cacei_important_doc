@@ -173,3 +173,20 @@ insert into presentation_types (name, description) values
 ('Mesa redonda', 'Participación en mesa de discusión');
 
 select * from presentation_types;
+
+-- Insertar tipos de conferencias
+insert into conference_types (name, description) values
+('Nacional', 'Evento académico de alcance nacional'),
+('Internacional', 'Evento académico de alcance internacional'),
+('Regional', 'Evento académico regional'),
+('Institucional', 'Evento organizado por una institución');
+
+select * from conference_types;
+
+-- Insertar tipos de modalidades 
+insert into modality_types (name, description) values
+('Presencial', 'Actividad realizada de forma presencial'),
+('Virtual', 'Actividad realizada en modalidad virtual'),
+('Híbrida', 'Actividad combinada presencial y virtual');
+
+select * from modality_types;

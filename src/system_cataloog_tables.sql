@@ -243,6 +243,10 @@
         constraint uq_conference_type_name unique(name)
     );
 
+	-- Agregar columna description
+    alter table conference_types
+    add column description varchar(100) not null;
+    
 	show create table conference_types;
     
 -- Modality Types
@@ -254,6 +258,10 @@
     );
     
 	show create table modality_types;
+    
+    -- Agregar columna description
+	alter table modality_types
+	add column description varchar(100) not null;
     
 -- Speaker Roles
     create table if not exists speaker_roles (
