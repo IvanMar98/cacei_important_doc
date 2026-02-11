@@ -142,3 +142,13 @@ insert into academic_bodies(name, description)values
 
 select * from academic_bodies;
 
+-- Insertar tipos de proyectos
+
+insert into project_types (name, description) values
+('Investigación', 'Generación de nuevo conocimiento científico'),
+('Desarrollo tecnológico', 'Creación o mejora de sistemas o prototipos'),
+('Innovación', 'Aplicación novedosa de tecnología existente'),
+('Vinculación', 'Colaboración con sector productivo o social'),
+('Educativo', 'Mejora de procesos o programas educativos');
+
+select * from project_types;

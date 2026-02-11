@@ -137,6 +137,10 @@
 	modify name varchar(100) not null,
 	add constraint uq_project_type_name unique (name);
     
+    -- Agregar columna description
+    alter table project_types
+    add column description varchar(100) not null;
+    
 	show create table project_types;
 
 -- Roles
