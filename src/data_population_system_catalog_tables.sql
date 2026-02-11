@@ -152,3 +152,24 @@ insert into project_types (name, description) values
 ('Educativo', 'Mejora de procesos o programas educativos');
 
 select * from project_types;
+
+-- Insertar tipos de publicaciones
+
+insert into publication_types (name, description) values
+('Difusión', 'Publicación orientada a la comunicación académica especializada'),
+('Divulgación', 'Publicación orientada al público general'),
+('Memoria de congreso arbitrada', 'Artículo publicado en memorias con arbitraje'),
+('Memoria de congreso no arbitrada', 'Artículo publicado en memorias sin arbitraje'),
+('Artículo arbitrado', 'Artículo evaluado por pares'),
+('Artículo no arbitrado', 'Artículo sin proceso formal de arbitraje');
+
+select * from publication_types;
+
+-- Insertar tipos de presentaciones
+insert into presentation_types (name, description) values
+('Ponencia oral', 'Presentación oral en evento académico'),
+('Cartel', 'Presentación en formato póster'),
+('Conferencia magistral', 'Ponencia principal invitada'),
+('Mesa redonda', 'Participación en mesa de discusión');
+
+select * from presentation_types;

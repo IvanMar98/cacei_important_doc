@@ -192,6 +192,10 @@
 	alter table publication_types
 	add constraint uc_role unique (name);
     
+     -- Agregar columna description
+    alter table publication_types
+    add column description varchar(100) not null;
+    
     -- Eliminar constraint unique
 	alter table publication_types
 	drop INDEX uc_role;
@@ -213,6 +217,10 @@
 	-- Agregar nueva contraint unique
 	alter table journals
 	add constraint uq_presentation_type_name unique (name);
+    
+     -- Agregar columna description
+    alter table presentation_types
+    add column description varchar(100) not null;
 	
 	show create table presentation_types;
     
